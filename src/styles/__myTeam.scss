@@ -1,0 +1,291 @@
+@use "_variables";
+
+.page-myTeam {
+  * {
+    font-family: variables.$fontPoppins;
+    color: var(--blue-dark, #006998);
+  }
+
+  font-size: 1.2vw;
+  padding: 0em 10em;
+  margin-bottom: 1vw;
+
+  .tittle-team {
+    margin-bottom: 0.5em;
+    font-size: 2em;
+    margin-top: 1.2em;
+  }
+
+  p {
+    font-size: 1.1em;
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 1.85em;
+    font-weight: bold;
+    color: #161616;
+  }
+
+  .container-info-total-level {
+    h1 {
+      margin: 0.5em 0em;
+      color: var(--blue-dark, #006998);
+    }
+    .container-total-team {
+      background: #ffffff;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+      border-radius: 0.5em;
+      padding: 1em;
+      height: 14em;
+
+      .container-map-info {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+          padding: 0.7em 0.5em;
+          border-radius: 0.5em;
+        }
+
+        .container-team {
+          background-image: linear-gradient(224deg, #80c342 0%, #058933 100%);
+          background-position: bottom;
+          background-size: 100% 0.05em;
+          background-repeat: no-repeat;
+          display: flex;
+
+          .team {
+            width: 13.5em;
+          }
+        }
+
+        .container-totalStaked {
+          background-image: linear-gradient(224deg, #80c342 0%, #058933 100%);
+          background-position: bottom;
+          background-size: 100% 0.05em;
+          background-repeat: no-repeat;
+          display: flex;
+          .totalStaked {
+            width: 13.5em;
+          }
+        }
+
+        .container-estimated {
+          background-image: linear-gradient(224deg, #80c342 0%, #058933 100%);
+          background-position: bottom;
+          background-size: 100% 0.05em;
+          background-repeat: no-repeat;
+          display: flex;
+          .estimatedEarnings {
+            width: 13.5em;
+          }
+        }
+      }
+    }
+
+    .container-level-refencial-team {
+      background: #ffffff;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+      border-radius: 0.5em;
+      padding: 1em;
+
+      h1 {
+        margin-bottom: 1em;
+        color: #161616;
+        font-size: 1.85em;
+      }
+
+      .container-tittles-referencial {
+        display: flex;
+        border-bottom: 0.1em solid #006998;
+        padding: 0em 1em 0.5em 1em;
+        p {
+          font-weight: bold;
+          font-size: 1.2em;
+        }
+
+        .nivelT {
+          width: 5.2em;
+        }
+
+        .teamT {
+          width: 5.4em;
+        }
+
+        .totalInvestT {
+          width: 9.3em;
+        }
+
+        .residualT {
+          width: 4em;
+        }
+
+        .totalResidualT {
+          width: 5em;
+        }
+      }
+
+      .container-level {
+        display: flex;
+        align-items: center;
+        padding: 0em 1em;
+        p {
+          padding: 0.6em 0em;
+          border-radius: 0.5em;
+          color: #161616;
+        }
+
+        .nivel {
+          width: 6em;
+        }
+
+        .team {
+          width: 6em;
+        }
+
+        .totalInvest {
+          width: 10em;
+        }
+
+        .residual {
+          width: 6em;
+        }
+
+        .totalResidual {
+          width: 5em;
+        }
+
+        img {
+          cursor: pointer;
+          width: 1.2em;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    font-size: 1.7vw;
+    padding: 0em 7em;
+
+    .container-info-total-level {
+      .container-total-team {
+        font-size: 1.2em;
+        margin: 0em 5em;
+      }
+
+      .container-level-refencial-team {
+        margin: 1em 0em;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    font-size: 2.2vw;
+    padding: 0em 4em;
+
+    .tittle-team {
+      margin-top: 2em;
+    }
+
+    .container-info-total-level {
+      h1 {
+        text-align: center;
+      }
+      .container-total-team {
+        font-size: 1.2em;
+        margin: 0em 0em;
+        width: 30em;
+
+        .container-map-info {
+          display: flex;
+          justify-content: space-between;
+
+          p {
+            padding: 0.7em 0.5em;
+            border-radius: 0.5em;
+          }
+
+          .container-team {
+            display: flex;
+            .team {
+              width: 15em;
+            }
+          }
+
+          .container-totalStaked {
+            .totalStaked {
+              width: 15em;
+            }
+          }
+
+          .container-estimated {
+            .estimatedEarnings {
+              width: 15em;
+            }
+          }
+        }
+      }
+
+      .container-level-refencial-team {
+        overflow-x: scroll;
+        width: 36em;
+        h1 {
+          text-align: start;
+        }
+        .container-tittles-referencial {
+          font-size: 1.2em;
+          width: 36em;
+          .nivelT {
+            width: 5em;
+          }
+
+          .teamT {
+            width: 5em;
+          }
+
+          .totalInvestT {
+            width: 9em;
+          }
+
+          .residualT {
+            width: 5.5em;
+          }
+
+          .totalResidualT {
+            width: 0em;
+          }
+        }
+
+        .container-level {
+          font-size: 1.2em;
+          width: 36em;
+          .nivel {
+            width: 7em;
+          }
+
+          .team {
+            width: 7em;
+          }
+
+          .totalInvest {
+            width: 12em;
+          }
+
+          .residual {
+            width: 6.5em;
+          }
+
+          .totalResidual {
+            width: 4.5em;
+          }
+
+          img {
+            cursor: pointer;
+            width: 1.35em;
+          }
+        }
+      }
+    }
+  }
+}

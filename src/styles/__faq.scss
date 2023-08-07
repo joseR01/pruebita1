@@ -1,0 +1,89 @@
+@use "_variables";
+
+.page-faq {
+  margin: 3vw 0vw 1vw 0vw;
+
+  * {
+    font-family: variables.$fontPoppins;
+    color: #006998;
+  }
+
+  font-size: 0.8vw;
+  padding: 0 5vw;
+  h1 {
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bold;
+    margin-bottom: 2vw;
+  }
+
+  h2 {
+    text-align: start;
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-bottom: 1vw;
+  }
+
+  p {
+    font-size: 1.2vw;
+    margin-bottom: 1vw;
+    text-align: justify;
+    color: #161616;
+    line-height: 1.5vw;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .page-faq {
+    margin: 6vw 0vw 1vw 0vw;
+    padding: 0 5vw;
+    h1 {
+      font-size: 2.5vw;
+    }
+
+    h2 {
+      font-size: 1.9vw;
+    }
+
+    p {
+      font-size: 1.6vw;
+      line-height: 2.5vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .page-faq {
+    margin: 6vw 0vw 1vw 0vw;
+    h1 {
+      font-size: 3vw;
+    }
+
+    h2 {
+      font-size: 2vw;
+    }
+
+    p {
+      font-size: 1.8vw;
+      line-height: 2.5vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .page-faq {
+    margin: 8vw 0vw 1vw 0vw;
+    h1 {
+      font-size: 4.5vw;
+    }
+
+    h2 {
+      font-size: 3vw;
+    }
+
+    p {
+      font-size: 2.5vw;
+      line-height: 3.5vw;
+    }
+  }
+}

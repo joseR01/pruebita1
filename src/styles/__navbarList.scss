@@ -1,0 +1,114 @@
+@use "_variables";
+
+.component-navbarList {
+  * {
+    font-family: variables.$fontPoppins;
+    color: white;
+  }
+
+  background: var(--blue-dark, #006998);
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  font-size: 1vw;
+
+  .list-link-navbar {
+    display: flex;
+    padding: 0em 3em 0em 2em;
+    a {
+      border-right: 0.1em solid #80c342;
+      height: 2.5em;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 11em;
+      .container-link-navbar {
+        display: flex;
+        align-items: center;
+        height: auto;
+        .icon-navbar {
+          width: 1.1em;
+        }
+        .link-navbar {
+          font-size: 1em;
+          margin-left: 0.5em;
+          // font-weight: bold;
+
+          a {
+            color: white;
+          }
+        }
+
+        .link-navbar:hover {
+          font-size: 1em;
+          margin-left: 0.5em;
+          // font-weight: bold;
+          color: white;
+        }
+      }
+    }
+
+    a:last-child {
+      border-right: none;
+    }
+
+    a:hover {
+      background: linear-gradient(224deg, #80c342 0%, #058933 100%);
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .component-navbarList {
+    * {
+      font-family: variables.$fontPoppins;
+      color: white;
+    }
+
+    background: #0d358e;
+    font-size: 1vw;
+    display: none;
+
+    .list-link-navbar {
+      display: flex;
+      padding: 0em 3em 0em 2em;
+      height: 2.5em;
+      .container-link-navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 0.15em solid grey;
+        width: 11em;
+        height: auto;
+        cursor: pointer;
+        .icon-navbar {
+          width: 1.1em;
+        }
+        .link-navbar {
+          font-size: 1em;
+          margin-left: 0.5em;
+          // font-weight: bold;
+
+          a {
+            color: white;
+          }
+        }
+
+        .link-navbar:hover {
+          font-size: 1em;
+          margin-left: 0.5em;
+          // font-weight: bold;
+          color: white;
+        }
+      }
+
+      .container-link-navbar:last-child {
+        border-right: none;
+      }
+
+      .container-link-navbar:hover {
+        background: linear-gradient(262.47deg, #efe94d -15.93%, #ff8001 100%);
+        color: #0d358e;
+      }
+    }
+  }
+}

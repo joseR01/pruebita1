@@ -1,0 +1,6 @@
+// export const URLlocal = 'http://localhost:3000'
+export const URLlocal = 'https://iamoney.finance'
+// export const URLApi = 'http://localhost:5000'
+export const URLApi = 'https://iamoney.finance'
+export const globalCompanyName = 'IaMoney'
+// export const URLApi = 'http://192.168.0.103:5000'

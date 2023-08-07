@@ -1,0 +1,498 @@
+@use "_variables";
+
+.page-level {
+  * {
+    font-family: variables.$fontPoppins;
+    color: #161616;
+  }
+  font-size: 1vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: 1.1em;
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 1.85em;
+    font-weight: bold;
+    margin-bottom: 2em;
+  }
+
+  .flechaBack {
+    width: 1.9em;
+    height: 1.9em;
+    position: absolute;
+    left: 10em;
+    top: 10em;
+    cursor: pointer;
+  }
+
+  .container-level {
+    background: #ffffff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    width: 54em;
+    border-radius: 1em;
+    padding: 2em 3em 1em 2em;
+    margin: 3em 0em;
+
+    .container-tittle-wallet {
+      display: flex;
+      border-bottom: #001848 solid 0.1em;
+      padding-right: 0em;
+      p {
+        font-weight: bold;
+        color: #006998;
+      }
+
+      .datosWalletT {
+        width: 10.5em;
+      }
+      .datosUserT {
+        width: 10em;
+      }
+      .datosTotalInvestT {
+        width: 13.5em;
+      }
+      .datosSponsorT {
+        width: 7em;
+      }
+    }
+  }
+
+  .accordion {
+    margin-top: 1em;
+    .accordion-item {
+      border: none;
+      .accordion-header {
+        margin-bottom: 1em;
+        display: flex;
+        align-items: center;
+
+        .datosWallet {
+          width: 11.5em;
+        }
+        .datosUser {
+          width: 11em;
+        }
+        .datosTotalInvest {
+          width: 14.5em;
+        }
+        .datosSponsort {
+          width: 10.5em;
+        }
+        img {
+          width: 1em;
+          cursor: pointer;
+        }
+      }
+
+      .accordion-collapse {
+        .accordion-body {
+          border: gray 0.1em solid;
+          margin-bottom: 1em;
+          .container-header-body {
+            border-bottom: gray 0.1em solid;
+            display: flex;
+            align-items: center;
+            p {
+              font-weight: bold;
+              color: #006998;
+            }
+            img {
+              width: 1em;
+              cursor: pointer;
+            }
+
+            .plan {
+              width: 6.5em;
+            }
+            .investment {
+              width: 10em;
+            }
+            .dateStart {
+              width: 9.5em;
+            }
+            .dateEnd {
+              width: 8.5em;
+            }
+            .status {
+              width: 7.5em;
+            }
+          }
+
+          .container-body-body {
+            .container-info {
+              margin-top: 0.5em;
+              display: flex;
+
+              .plan {
+                width: 6.5em;
+              }
+              .investment {
+                width: 10em;
+              }
+              .dateStart {
+                width: 9em;
+              }
+              .dateEnd {
+                width: 8.5em;
+              }
+              .status {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    font-size: 2vw;
+
+    .flechaBack {
+      left: 2em;
+      top: 5em;
+    }
+    .container-level {
+      margin: 5em 0em;
+      width: 42em;
+      .container-tittle-wallet {
+        padding-right: 3em;
+
+        .datosWalletT {
+          width: 11.5em;
+        }
+        .datosUserT {
+          width: 10.5em;
+        }
+        .datosTotalInvestT {
+          width: 14.5em;
+        }
+        .datosSponsorT {
+          width: 8.5em;
+        }
+      }
+    }
+
+    .accordion {
+      margin-top: 1em;
+      .accordion-item {
+        border: none;
+        .accordion-header {
+          margin-bottom: 1em;
+          display: flex;
+          align-items: center;
+
+          .datosWallet {
+            width: 11.5em;
+          }
+          .datosUser {
+            width: 11em;
+          }
+          .datosTotalInvest {
+            width: 14.5em;
+          }
+          .datosSponsort {
+            width: 10.5em;
+          }
+          img {
+            width: 1em;
+            cursor: pointer;
+          }
+        }
+
+        .accordion-collapse {
+          .accordion-body {
+            border: gray 0.1em solid;
+            margin-bottom: 1em;
+            .container-header-body {
+              border-bottom: gray 0.1em solid;
+              display: flex;
+              align-items: center;
+              p {
+                font-weight: bold;
+                font-size: 1em;
+              }
+              img {
+                width: 1em;
+                cursor: pointer;
+              }
+
+              .plan {
+                width: 7em;
+              }
+              .investment {
+                width: 10em;
+              }
+              .dateStart {
+                width: 9.5em;
+              }
+              .dateEnd {
+                width: 9.5em;
+              }
+              .status {
+                width: 5.5em;
+              }
+            }
+
+            .container-body-body {
+              .container-info {
+                margin-top: 0.5em;
+                display: flex;
+
+                p {
+                  font-size: 0.9em;
+                }
+
+                .plan {
+                  width: 6.5em;
+                }
+                .investment {
+                  width: 9em;
+                }
+                .dateStart {
+                  width: 8.5em;
+                }
+                .dateEnd {
+                  width: 8.5em;
+                }
+                .status {
+                  width: 4.5em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.7vw;
+
+    .flechaBack {
+      width: 1.5em;
+      height: 1.5em;
+      position: absolute;
+      left: 2em;
+      top: 7em;
+      cursor: pointer;
+    }
+    .container-level {
+      margin: 5em 0em;
+    }
+
+    .accordion {
+      margin-top: 1em;
+      .accordion-item {
+        border: none;
+        .accordion-header {
+          margin-bottom: 1em;
+          display: flex;
+          align-items: center;
+
+          .datosWallet {
+            width: 11.5em;
+          }
+          .datosUser {
+            width: 11em;
+          }
+          .datosTotalInvest {
+            width: 14.5em;
+          }
+          .datosSponsort {
+            width: 10.5em;
+          }
+          img {
+            width: 1em;
+            cursor: pointer;
+          }
+        }
+
+        .accordion-collapse {
+          .accordion-body {
+            border: gray 0.1em solid;
+            margin-bottom: 1em;
+            .container-header-body {
+              border-bottom: gray 0.1em solid;
+              display: flex;
+              align-items: center;
+              p {
+                font-weight: bold;
+                font-size: 1em;
+              }
+              img {
+                width: 1em;
+                cursor: pointer;
+              }
+
+              .plan {
+                width: 7em;
+              }
+              .investment {
+                width: 10em;
+              }
+              .dateStart {
+                width: 9.5em;
+              }
+              .dateEnd {
+                width: 9.5em;
+              }
+              .status {
+                width: 5.5em;
+              }
+            }
+
+            .container-body-body {
+              .container-info {
+                margin-top: 0.5em;
+                display: flex;
+
+                p {
+                  font-size: 0.9em;
+                }
+
+                .plan {
+                  width: 6.5em;
+                }
+                .investment {
+                  width: 8.5em;
+                }
+                .dateStart {
+                  width: 8.5em;
+                }
+                .dateEnd {
+                  width: 8em;
+                }
+                .status {
+                  width: 4.5em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 575px) {
+    font-size: 2.4vw;
+
+    .flechaBack {
+      top: 7em;
+    }
+    .container-level {
+      margin: 5em 0em;
+      width: 39em;
+      .container-tittle-wallet {
+        padding-right: 3em;
+      }
+
+      .accordion-collapse {
+        width: 36em;
+        overflow-x: scroll;
+
+        .accordion-body {
+          padding: 0.8em;
+          width: 52em;
+        }
+      }
+    }
+
+    .accordion {
+      margin-top: 1em;
+      .accordion-item {
+        border: none;
+        .accordion-header {
+          margin-bottom: 1em;
+          display: flex;
+          align-items: center;
+
+          .datosWallet {
+            width: 11.5em;
+          }
+          .datosUser {
+            width: 11em;
+          }
+          .datosTotalInvest {
+            width: 14.5em;
+          }
+          .datosSponsort {
+            width: 10.5em;
+          }
+          img {
+            width: 1em;
+            cursor: pointer;
+          }
+        }
+
+        .accordion-collapse {
+          .accordion-body {
+            border: gray 0.1em solid;
+            margin-bottom: 1em;
+            .container-header-body {
+              border-bottom: gray 0.1em solid;
+              display: flex;
+              align-items: center;
+              p {
+                font-weight: bold;
+                font-size: 1em;
+              }
+              img {
+                width: 1em;
+                cursor: pointer;
+              }
+
+              .plan {
+                width: 7em;
+              }
+              .investment {
+                width: 10em;
+              }
+              .dateStart {
+                width: 9.5em;
+              }
+              .dateEnd {
+                width: 9.5em;
+              }
+              .status {
+                width: 5.5em;
+              }
+            }
+
+            .container-body-body {
+              .container-info {
+                margin-top: 0.5em;
+                display: flex;
+
+                p {
+                  font-size: 0.9em;
+                }
+
+                .plan {
+                  width: 8em;
+                }
+                .investment {
+                  width: 11em;
+                }
+                .dateStart {
+                  width: 10.5em;
+                }
+                .dateEnd {
+                  width: 10.8em;
+                }
+                .status {
+                  width: 5.5em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

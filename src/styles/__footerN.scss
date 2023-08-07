@@ -1,0 +1,81 @@
+@use "_variables";
+
+.component-footer {
+  * {
+    font-family: variables.$fontPoppins;
+    color: white;
+  }
+
+  // background-image: url(../assets/footer/banner-oleado-azul.png);
+  // background-repeat: no-repeat;
+  // background-position: 0% 0%;
+  // background-size: 100% 100%;
+  // object-fit: cover;
+  // height: 5.4vw;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 0.3vw;
+
+  .titulo-footer {
+    font-size: 1vw;
+    margin-bottom: 0vw;
+    // font-weight: bold;
+  }
+}
+
+.component-footerAzul {
+  * {
+    font-family: variables.$fontPoppins;
+    color: white;
+  }
+
+  background: linear-gradient(270deg, #07abea 0%, #006998 100%);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+  .titulo-footer {
+    font-size: 1vw;
+    margin-bottom: 0vw;
+    // font-weight: bold;
+    padding: 0.5vw 0vw;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .component-footer {
+    * {
+      font-family: variables.$fontPoppins;
+      color: white;
+      font-size: 1vw;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 0.3vw;
+
+    .titulo-footer {
+      font-size: 0.8em;
+      margin-bottom: 0vw;
+    }
+  }
+
+  .component-footerAzul {
+    * {
+      font-family: variables.$fontPoppins;
+      color: white;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    .titulo-footer {
+      font-size: 0.8em;
+      margin-bottom: 0vw;
+      padding: 0.5em 0vw;
+    }
+  }
+}

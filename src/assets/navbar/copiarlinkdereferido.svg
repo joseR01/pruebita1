@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="249" height="61" viewBox="0 0 249 61">
+  <defs>
+    <filter id="Rectángulo_6" x="0" y="0" width="249" height="61" filterUnits="userSpaceOnUse">
+      <feOffset dx="-2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-color="#1c4f95" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_353" data-name="Grupo 353" transform="translate(-1414 -10.5)">
+    <g transform="matrix(1, 0, 0, 1, 1414, 10.5)" filter="url(#Rectángulo_6)">
+      <g id="Rectángulo_6-2" data-name="Rectángulo 6" transform="translate(9.5 5.5)" fill="rgba(0,78,154,0)" stroke="#11dcca" stroke-width="2">
+        <rect width="234" height="46" rx="6" stroke="none"/>
+        <rect x="1" y="1" width="232" height="44" rx="5" fill="none"/>
+      </g>
+    </g>
+    <text id="Copiar_link_de_referido" data-name="Copiar link de referido" transform="translate(1540.5 47)" fill="#11dcca" font-size="20" font-family="Exo2-SemiBold, 'Exo \32 '" font-weight="600"><tspan x="-102.16" y="0">Copiar link de referido</tspan></text>
+  </g>
+</svg>

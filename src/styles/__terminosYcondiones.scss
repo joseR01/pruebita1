@@ -1,0 +1,109 @@
+@use "_variables";
+
+.page-terminosYcondiciones {
+  margin: 2vw 0vw 1vw 0vw;
+
+  * {
+    font-family: variables.$fontPoppins;
+    color: black;
+  }
+
+  font-size: 0.8vw;
+  padding: 0 5vw;
+  h1 {
+    text-align: start;
+    font-size: 1.4vw;
+    font-weight: bold;
+    margin-bottom: 1vw;
+  }
+
+  p {
+    font-size: 1.1vw;
+    margin-bottom: 1vw;
+    text-align: justify;
+  }
+  span {
+    font-size: 1.1vw;
+    text-align: justify;
+  }
+
+  .container-global {
+    margin-bottom: 2vw;
+  }
+
+  .button-dercargar {
+    text-align: center;
+    margin: 4vw 0;
+    a {
+      background: linear-gradient(224deg, #80c342 0%, #058933 100%);
+      color: white;
+      font-weight: bold;
+      border-radius: 0.5vw;
+      font-size: 1.2vw;
+      padding: 1.4vw 3vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .page-terminosYcondiciones {
+    h1 {
+      font-size: 2vw;
+    }
+
+    p {
+      font-size: 1.5vw;
+    }
+    span {
+      font-size: 1.5vw;
+    }
+
+    .button-dercargar {
+      a {
+        font-size: 1.6vw;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .page-terminosYcondiciones {
+    h1 {
+      font-size: 2.4vw;
+    }
+
+    p {
+      font-size: 2vw;
+    }
+    span {
+      font-size: 2vw;
+    }
+
+    .button-dercargar {
+      a {
+        font-size: 2.1vw;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .page-terminosYcondiciones {
+    h1 {
+      font-size: 4.2vw;
+    }
+
+    p {
+      font-size: 3.2vw;
+    }
+    span {
+      font-size: 3.2vw;
+    }
+
+    .button-dercargar {
+      a {
+        font-size: 3.3vw;
+      }
+    }
+  }
+}

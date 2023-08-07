@@ -1,0 +1,106 @@
+// .component-side-bar {
+//   font-size: 1vw;
+//   // background: linear-gradient(270deg, #e2e2e2 -29.36%, #f2f2f2 135.32%);
+//   // box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.25);
+//   position: absolute;
+//   // max-height: 100vh;
+//   display: none;
+//   min-height: 100vh;
+//   overflow: auto;
+//   width: 13.5em;
+//   z-index: 1;
+
+//   .container-menu_hamburguesa {
+//     margin: 2em 2em;
+//   }
+
+//   .list-link {
+//     margin-top: 2.9em;
+//     .container-link {
+//       display: flex;
+//       align-items: center;
+//       padding: 1em 1.8em;
+//       cursor: pointer;
+//       margin: 1em 0px;
+
+//       .icon-sidebar {
+//         width: 1.1em;
+//       }
+
+//       .link-sidebar {
+//         font-size: 1em;
+//         margin-left: 1em;
+//         font-weight: bold;
+//         a {
+//           color: #006998;
+//         }
+//       }
+
+//       &:hover .link-sidebar {
+//         border-bottom: solid 0.15em #006998;
+//       }
+
+//       // &:hover .icon-sidebar {
+//       //   width: 1.15em;
+//       // }
+//     }
+//   }
+
+//   .button-tema-margin {
+//     margin: 2em 2em;
+//   }
+
+//   @media only screen and (max-width: 992px) {
+//     font-size: 2vw;
+//     width: 12em;
+//     .container-menu_hamburguesa {
+//       margin: 1em 1.4em;
+//     }
+
+//     .list-link {
+//       margin-top: 2em;
+//       .container-link {
+//         display: flex;
+//         align-items: center;
+//         padding: 0.5em 1.8em;
+//         cursor: pointer;
+//         margin: 0.5em 0px;
+
+//         .icon-sidebar {
+//           width: 1.1em;
+//         }
+
+//         .link-sidebar {
+//           font-size: 1em;
+//           margin-left: 1em;
+//           font-weight: bold;
+//           a {
+//             color: #006998;
+//           }
+//         }
+
+//         &:hover .link-sidebar {
+//           border-bottom: solid 0.15em #006998;
+//         }
+
+//         // &:hover .icon-sidebar {
+//         //   width: 1.15em;
+//         // }
+//       }
+//     }
+//   }
+
+//   @media only screen and (max-width: 768px) {
+//     font-size: 2vw;
+//     .container-menu_hamburguesa {
+//       margin: 2em 2em;
+//     }
+//   }
+
+//   @media only screen and (max-width: 576px) {
+//     font-size: 2.8vw;
+//     .container-menu_hamburguesa {
+//       margin: 2em 2em;
+//     }
+//   }
+// }

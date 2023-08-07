@@ -1,0 +1,477 @@
+@use "_variables";
+
+.page-dashboard {
+  * {
+    font-family: variables.$fontPoppins;
+    color: var(--blue-dark, #006998);
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .container-info-dashboard {
+    border-radius: 0.2vw;
+    padding: 1vw 2vw;
+    width: 75vw;
+    margin-top: 2vw;
+
+    p {
+      font-size: 1.3vw;
+    }
+
+    .name {
+      font-weight: bold;
+      font-size: 1.3vw;
+    }
+
+    .monto {
+      margin-top: 2vw;
+      color: #161616;
+      font-weight: bold;
+      font-size: 1.5vw;
+    }
+
+    .container-info-summary {
+      position: relative;
+
+      .tittle-summary {
+        font-size: 2.1vw;
+        font-weight: bold;
+        margin-bottom: 0.5vw;
+        color: #161616;
+      }
+
+      .container-total-info {
+        background: #ffffff;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+        border-radius: 1vw;
+        padding: 1.8vw 1.5vw;
+        margin-top: 1.5vw;
+
+        .container-info {
+          p {
+            // font-size: 1.3vw;
+          }
+        }
+        .container-monto {
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    .container-info-myAccount {
+      margin-top: 3vw;
+      position: relative;
+
+      .tittle-my-account {
+        font-size: 2.1vw;
+        font-weight: bold;
+        margin-bottom: 0.7vw;
+        color: #161616;
+      }
+
+      .container-info-my-account {
+        background: #ffffff;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+        margin-top: 1.5vw;
+        border-radius: 1vw;
+        padding: 1.8vw 1.5vw;
+        display: flex;
+        .monto {
+          color: #161616;
+          font-weight: bold;
+        }
+        .my-total-investment {
+          display: flex;
+          flex-direction: column;
+          margin-right: 8.5vw;
+        }
+
+        .my-referral-earnings {
+          display: flex;
+          flex-direction: column;
+          margin-right: 8.5vw;
+        }
+
+        .my-ernings {
+          .name {
+            text-align: start;
+          }
+
+          .container-mes-dias {
+            margin-top: 3.2vw;
+            margin-left: 1.6vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ReactModal__Overlay {
+  background-color: #202020c9 !important;
+  z-index: 100000;
+
+  .container-modal-dashboard-pay {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 0.5vw;
+    padding: 1vw;
+    width: 25vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      font-size: 1.1vw;
+    }
+    button {
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .ReactModal__Overlay {
+    .container-modal-dashboard-pay {
+      width: 40vw;
+
+      p {
+        font-size: 1.8vw;
+      }
+      button {
+        font-size: 2vw;
+        width: 18vw;
+        padding: 1vw 0vw;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .page-dashboard {
+    * {
+      font-family: variables.$fontPoppins;
+      color: #001848;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .container-info-dashboard {
+      border-radius: 0.2vw;
+      padding: 1vw 2vw;
+      width: 80vw;
+      margin-top: 2vw;
+
+      p {
+        font-size: 3vw;
+      }
+
+      .name {
+        font-weight: bold;
+        font-size: 3.5vw;
+        width: 47vw;
+      }
+
+      .monto {
+        margin-top: 0vw;
+      }
+
+      .container-info-summary {
+        position: relative;
+
+        .tittle-summary {
+          font-size: 5vw;
+          font-weight: bold;
+          margin: 3vw 0vw;
+        }
+
+        .container-total-info {
+          background: #ffffff;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+          border-radius: 1vw;
+          padding: 1.8vw 1.5vw;
+          margin-top: 1.5vw;
+          flex-direction: column;
+
+          .container-info {
+            display: flex;
+            margin-bottom: 4.5vw;
+            padding-left: 1vw;
+            p {
+              font-size: 3.5vw;
+            }
+          }
+
+          .container-info:last-child {
+            margin-bottom: 1vw;
+          }
+
+          .container-info:first-child {
+            margin-top: 1vw;
+          }
+
+          .container-monto {
+            p {
+              text-align: center;
+              color: #161616;
+            }
+          }
+        }
+      }
+
+      .container-info-myAccount {
+        margin-top: 8vw;
+        position: relative;
+        margin-bottom: 4vw;
+
+        .tittle-my-account {
+          font-size: 5vw;
+          font-weight: bold;
+          margin-bottom: 3vw;
+        }
+
+        .container-info-my-account {
+          background: #ffffff;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+          margin-top: 1.5vw;
+          border-radius: 1vw;
+          padding: 1.8vw 1.5vw;
+          display: flex;
+          flex-direction: column;
+
+          .monto {
+            color: #161616;
+            font-size: 3.5vw;
+          }
+          .my-total-investment {
+            display: flex;
+            flex-direction: row;
+            margin-right: 0vw;
+            margin-bottom: 5vw;
+            margin-top: 1vw;
+          }
+
+          .my-referral-earnings {
+            display: flex;
+            flex-direction: row;
+            margin-right: 0vw;
+            margin-bottom: 5vw;
+          }
+
+          .my-erningsMovil {
+            width: 100%;
+            text-align: center;
+
+            p {
+              font-size: 3.5vw;
+            }
+
+            .name {
+              text-align: end;
+              margin-bottom: 3.5vw;
+            }
+
+            .monto {
+              text-align: end;
+              margin-right: 2vw;
+              color: #161616;
+            }
+
+            .container-mes-dias {
+              margin-top: 3vw;
+              margin-left: 0vw;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ReactModal__Overlay {
+    background-color: #202020c9 !important;
+    // background-color: #131212f5 !important;
+    z-index: 100000;
+
+    .container-modal-dashboard-pay {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      right: auto;
+      bottom: auto;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      border: none;
+      border-radius: 0.5vw;
+      padding: 1vw;
+      width: 55vw;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        font-size: 3vw;
+      }
+      button {
+        font-size: 2.5vw;
+        width: 18vw;
+        padding: 1vw 0vw;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .page-dashboard {
+    * {
+      font-family: variables.$fontPoppins;
+      color: #001848;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .container-info-dashboard {
+      border-radius: 0.2vw;
+      padding: 1vw 2vw;
+      width: 80vw;
+      margin-top: 2vw;
+
+      p {
+        font-size: 3vw;
+      }
+
+      .name {
+        font-weight: bold;
+        font-size: 3.5vw;
+        width: 47vw;
+      }
+
+      .monto {
+        margin-top: 0vw;
+      }
+
+      .container-info-summary {
+        position: relative;
+
+        .tittle-summary {
+          font-size: 5vw;
+          font-weight: bold;
+          margin: 3vw 0vw;
+        }
+
+        .container-total-info {
+          background: #ffffff;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+          border-radius: 1vw;
+          padding: 1.8vw 1.5vw;
+          margin-top: 1.5vw;
+          flex-direction: column;
+
+          .container-info {
+            display: flex;
+            margin-bottom: 4.5vw;
+            padding-left: 1vw;
+            p {
+              font-size: 3.5vw;
+            }
+          }
+
+          .container-info:last-child {
+            margin-bottom: 1vw;
+          }
+
+          .container-info:first-child {
+            margin-top: 1vw;
+          }
+
+          .container-monto {
+            p {
+              text-align: center;
+              color: #161616;
+            }
+          }
+        }
+      }
+
+      .container-info-myAccount {
+        margin-top: 8vw;
+        position: relative;
+        margin-bottom: 0vw;
+
+        .tittle-my-account {
+          font-size: 5vw;
+          font-weight: bold;
+          margin-bottom: 3vw;
+        }
+
+        .container-info-my-account {
+          background: #ffffff;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+          margin-top: 1.5vw;
+          border-radius: 1vw;
+          padding: 1.8vw 1.5vw;
+          display: flex;
+          flex-direction: column;
+
+          .monto {
+            color: #161616;
+            font-size: 3.5vw;
+          }
+          .my-total-investment {
+            display: flex;
+            flex-direction: row;
+            margin-right: 0vw;
+            margin-bottom: 5vw;
+            margin-top: 1vw;
+          }
+
+          .my-referral-earnings {
+            display: flex;
+            flex-direction: row;
+            margin-right: 0vw;
+            margin-bottom: 5vw;
+          }
+
+          .my-erningsMovil {
+            width: 100%;
+            text-align: center;
+
+            p {
+              font-size: 3.5vw;
+            }
+
+            .name {
+              text-align: end;
+              margin-bottom: 3.5vw;
+            }
+
+            .monto {
+              text-align: end;
+              margin-right: 2vw;
+              color: #161616;
+            }
+
+            .container-mes-dias {
+              margin-top: 3vw;
+              margin-left: 0vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}

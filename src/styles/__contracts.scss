@@ -1,0 +1,250 @@
+@use "_variables";
+
+.page-contracts {
+  margin: 3vw 0vw 1vw 0vw;
+
+  * {
+    font-family: variables.$fontPoppins;
+    color: #006998;
+  }
+
+  display: flex;
+  justify-content: center;
+  padding: 0vw 10vw;
+
+  p {
+    font-size: 1.55vw;
+  }
+
+  .container-plan {
+    height: 100px;
+    width: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(157, 148, 148, 0.623);
+  }
+
+  .container-info {
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 0.5vw;
+    height: 30vw;
+    position: relative;
+
+    .container-tittle-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-between;
+
+      img {
+        width: 3vw;
+      }
+      p {
+        font-weight: bold;
+      }
+    }
+
+    .container-planes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      h2 {
+        font-size: 1.8vw;
+        font-weight: bold;
+        margin-bottom: 0.4vw;
+        padding-top: 1.5vw;
+      }
+      button {
+        font-size: 1vw;
+        width: 7vw;
+        padding: 0.6vw 0vw;
+        border-radius: 2vw;
+        font-weight: bold;
+        background-color: #ffffff;
+        border: 0.1vw solid #006998;
+        cursor: pointer;
+      }
+    }
+
+    .--plan1 {
+      background-color: #006998;
+      p,
+      h2 {
+        color: white;
+      }
+    }
+  }
+
+  .--border-none {
+    border: none;
+  }
+  .--moreHeight {
+    height: 120px;
+  }
+}
+
+.page-contracts-mobile {
+  * {
+    font-family: variables.$fontPoppins;
+    color: white;
+  }
+
+  margin: 6vw 0vw 0vw 0vw;
+  .--cardWidth {
+    width: 62vw;
+    background: linear-gradient(221deg, #07abea 0%, #006998 100%);
+    box-shadow: 5.766135215759277px 5.766135215759277px 14.415338516235352px 0px
+      rgba(0, 0, 0, 0.25);
+  }
+  button {
+    font-size: 13px;
+    padding: 6px 17px;
+    border-radius: 0.5vw;
+    font-weight: bold;
+    background: linear-gradient(224deg, #80c342 0%, #058933 100%);
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .container-plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(157, 148, 148, 0.623);
+  }
+
+  .--border-none {
+    border: none;
+  }
+}
+
+.modal-planes-contracts {
+  font-size: 1vw;
+  padding: 2em 2em;
+
+  p {
+    font-size: 1.35em;
+    color: #006998;
+    font-weight: bold;
+  }
+
+  label {
+    font-size: 1.35em;
+    color: #006998;
+    font-weight: bold;
+  }
+
+  input {
+    font-size: 1.25em;
+    padding: 0.5em 0em 0.5em 0.5em;
+    background: #f6f7fb;
+    color: #495057;
+  }
+
+  .title-modal-stake {
+    font-weight: bold;
+    // border-bottom: 1px solid black;
+    padding-bottom: 0.5em;
+    font-size: 2em;
+    color: #006998;
+  }
+  .title-modal-confirmed {
+    font-weight: bold;
+    // border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    color: #0ece44;
+    font-size: 2em;
+  }
+  .containerAux {
+    padding: 1vw 0vw;
+  }
+  //inicio segundo modal
+  .amount-container {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+
+    p {
+      margin-right: 10px;
+    }
+    .title-numero-plan {
+      color: #ff8001;
+      margin-right: 5em;
+      font-size: 1.45em;
+    }
+  }
+
+  .hash-container {
+    margin: 2vw 0vw;
+  }
+
+  .date-container {
+    margin: 2vw 0vw;
+  }
+
+  .botones-modal-plan {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    button {
+      font-size: 1.1em;
+      width: 11em;
+      font-weight: bold;
+    }
+
+    .btn-add-new-plan {
+      width: 13em;
+      color: white;
+    }
+  }
+  //final segundo modal
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.3vw;
+    input {
+      font-size: 1.25em;
+      padding: 0.5em 0em 0.5em 0.5em;
+      background: #f6f7fb;
+      color: #495057;
+    }
+
+    label {
+      margin: 2.5vw 0vw;
+    }
+
+    .containerAux {
+      padding: 0vw 5vw;
+    }
+
+    //inicio segundo modal
+    .amount-container {
+      .title-numero-plan {
+        margin-right: 4em;
+      }
+    }
+
+    .hash-container {
+      margin: 3vw 0vw;
+    }
+
+    .date-container {
+      margin: 3vw 0vw;
+
+      * {
+        margin: 1vw 0vw;
+      }
+    }
+    //final segundo modal
+  }
+
+  @media only screen and (max-width: 576px) {
+    font-size: 1.9vw;
+  }
+}

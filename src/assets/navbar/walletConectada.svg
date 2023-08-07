@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="183.5" height="61" viewBox="0 0 183.5 61">
+  <defs>
+    <filter id="Rectángulo_6" x="0" y="0" width="183.5" height="61" filterUnits="userSpaceOnUse">
+      <feOffset dx="-2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-color="#1c4f95" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_1" data-name="Grupo 1" transform="translate(-1432.5 -10.5)">
+    <g transform="matrix(1, 0, 0, 1, 1432.5, 10.5)" filter="url(#Rectángulo_6)">
+      <rect id="Rectángulo_6-2" data-name="Rectángulo 6" width="168.5" height="46" rx="6" transform="translate(9.5 5.5)" fill="#004e9a"/>
+    </g>
+    <text id="_0xbcd_bb2f" data-name="0xbcd…bb2f" transform="translate(1535.5 47)" fill="#11dcca" font-size="20" font-family="Exo2-Bold, 'Exo \32 '" font-weight="700"><tspan x="-59.5" y="0">0xbcd…bb2f</tspan></text>
+    <circle id="Elipse_9" data-name="Elipse 9" cx="4" cy="4" r="4" transform="translate(1457 36)" fill="#11dcca"/>
+  </g>
+</svg>

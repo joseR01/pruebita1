@@ -1,0 +1,602 @@
+@use "_variables";
+
+.component-usuario {
+  * {
+    font-family: variables.$fontPoppins;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 1.5vw;
+
+  .container-perfil {
+    background-image: url("../assets/usuario/fondodedatospersonales@2x.png");
+    background-position: 0% 0%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    margin-top: 1.5vw;
+    width: 53%;
+    padding: 0.4vw 0vw 0.6vw 0.5vw;
+
+    .container-interno-map-perfil {
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 0vw 4vw 0vw 0vw;
+
+      .imagenDePerfil {
+        position: relative;
+
+        .imagenDeFotoPerfil {
+          width: 13vw;
+          height: 14vw;
+          object-fit: cover;
+          border-radius: 1.5vw;
+          border: 2px solid #11dcca;
+          margin-right: 0.5vw;
+        }
+
+        .iconEditarFoto {
+          position: absolute;
+          width: 3vw;
+          left: 10vw;
+          top: 11vw;
+          cursor: pointer;
+        }
+      }
+
+      .container-info-perfil {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        padding: 2vw 0vw 2vw 0.5vw;
+
+        .container-name-editarIcon {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .imagenEditarIcon {
+            margin-right: 0.5vw;
+            width: 0.9vw;
+            cursor: pointer;
+          }
+
+          .nombreDeUsuario {
+            font-size: 1.3vw;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .container-datos-editarIcon {
+        margin-top: -0.5vw;
+
+        .imagenEditarIconDatos {
+          margin-right: 0.5vw;
+          width: 0.9vw;
+          cursor: pointer;
+        }
+
+        span {
+          font-size: 1.3vw;
+        }
+      }
+
+      .lineaSeparadoraPerfil {
+        width: 30vw;
+        border: 1px solid #ffffff;
+        opacity: 0.5;
+      }
+
+      .walletPerfil {
+        color: #11dcca;
+        text-shadow: 0px 3px 6px #00000029;
+        font-size: 1.2vw;
+        font-weight: bold;
+      }
+
+      .btn-perfil {
+        color: #b7b7b7;
+        text-shadow: 0px 3px 6px #00000029;
+        margin-top: -1vw;
+        font-size: 1.2vw;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .container-sponsorUsario {
+    background: transparent linear-gradient(270deg, #00407c 0%, #00203e 100%) 0%
+      0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 1vw;
+    width: 52%;
+    margin-top: 1vw;
+    padding-bottom: 1vw;
+
+    .container-interno-sponsor {
+      display: flex;
+
+      .container-img {
+        background-color: #b7b7b7;
+        margin-left: 1.5vw;
+        margin-top: 2vw;
+        height: 7.5vw;
+        width: 7.5vw;
+        border-radius: 50%;
+        border: 0.1vw solid #11dcca;
+
+        img {
+          width: 5vw;
+          margin: auto;
+          margin-top: 2.5vw;
+        }
+      }
+
+      .container-info {
+        text-align: start;
+        padding-left: 3.5vw;
+        margin-top: 1vw;
+        color: white;
+
+        h1 {
+          font-size: 1.6vw;
+          font-weight: bold;
+          margin-top: 1.5vw;
+        }
+
+        p {
+          margin-top: 1vw;
+          font-size: 1.15vw;
+        }
+
+        .name-sponsor {
+          margin-top: 0.5vw;
+          font-size: 1.2vw;
+        }
+
+        .circulo-parrafo {
+          display: flex;
+
+          .circulo-conectado {
+            width: 0.4vw;
+            height: 0.4vw;
+            background-color: #11dcca;
+            border-radius: 50%;
+            margin: 0.7vw 0.5vw 0vw 0vw;
+          }
+
+          .conectado {
+            margin-top: 0.4vw;
+            color: #11dcca;
+          }
+
+          .desconectado {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ReactModal__Overlay {
+  background-color: #202020c9 !important;
+
+  .container-modalName {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #11dcca;
+    border-radius: 0.5vw;
+    padding: 1vw;
+    width: 25vw;
+    background-color: white;
+
+    .tituloModalName {
+      font-size: 1.5vw;
+      color: #004e9a;
+      margin-bottom: 1vw;
+    }
+
+    .formularioName {
+      .inputName {
+        width: 100%;
+        padding: 0.3vw;
+        font-size: 1vw;
+      }
+
+      .container-btns {
+        margin-top: 0.6vw;
+        display: flex;
+        justify-content: center;
+
+        .btnGlobalForm {
+          background-color: #11dcca;
+          border: none;
+          padding: 0.5vw 1vw;
+          border-radius: 0.2vw;
+          font-size: 0.8vw;
+          font-weight: bold;
+          color: #004e9a;
+          cursor: pointer;
+        }
+
+        .btn-cerrar {
+          margin-right: 0.5vw;
+        }
+      }
+    }
+  }
+
+  .container-modalData {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #11dcca;
+    border-radius: 0.5vw;
+    padding: 1vw;
+    width: 25vw;
+    background-color: white;
+
+    .tituloModalData {
+      font-size: 1.5vw;
+      color: #004e9a;
+      margin-bottom: 1vw;
+    }
+
+    .formularioData {
+      display: flex;
+      flex-direction: column;
+
+      .labelGlobal {
+        font-size: 1vw;
+        margin-bottom: 0.2vw;
+      }
+
+      .inputGlobal {
+        width: 100%;
+        padding: 0.3vw;
+        font-size: 1vw;
+        margin-bottom: 0.5vw;
+        border-radius: 0.3vw;
+        border: 0.1vw solid black;
+      }
+
+      .selectGender {
+        option {
+        }
+      }
+
+      .container-btns {
+        margin-top: 0.6vw;
+        display: flex;
+        justify-content: center;
+
+        .btnGlobalForm {
+          background-color: #11dcca;
+          border: none;
+          padding: 0.5vw 1vw;
+          border-radius: 0.2vw;
+          font-size: 0.8vw;
+          font-weight: bold;
+          color: #004e9a;
+          cursor: pointer;
+        }
+
+        .btn-cerrar {
+          margin-right: 0.5vw;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .component-usuario {
+    * {
+      font-family: variables.$fontExo;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 1.5vw;
+
+    .container-perfil {
+      background-image: url("../assets/usuario/fondodedatospersonales@2x.png");
+      background-position: 0% 0%;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      margin-top: 1.5vw;
+      margin-bottom: 2vw;
+      width: 95%;
+      padding: 2vw 0vw;
+
+      .container-interno-map-perfil {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .imagenDePerfil {
+          position: relative;
+
+          .imagenDeFotoPerfil {
+            width: 25vw;
+            object-fit: cover;
+            height: 25vw;
+          }
+
+          .iconEditarFoto {
+            position: absolute;
+            width: 6vw;
+            left: 19vw;
+            top: 19.5vw;
+            cursor: pointer;
+          }
+        }
+
+        .container-info-perfil {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          justify-content: space-between;
+          padding: 0vw 0vw 3.5vw 0.5vw;
+
+          .container-name-editarIcon {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 2.5vw 0vw;
+
+            .imagenEditarIcon {
+              margin-right: 1vw;
+              width: 2vw;
+              cursor: pointer;
+            }
+
+            .nombreDeUsuario {
+              font-size: 4vw;
+              font-weight: bold;
+            }
+          }
+        }
+
+        .container-datos-editarIcon {
+          margin-top: -0.5vw;
+
+          .imagenEditarIconDatos {
+            margin-right: 1vw;
+            width: 2vw;
+            cursor: pointer;
+          }
+
+          span {
+            font-size: 4vw;
+          }
+        }
+
+        .lineaSeparadoraPerfil {
+          width: 72vw;
+          border: 1px solid #ffffff;
+          opacity: 0.5;
+          margin: 2.5vw 0vw;
+        }
+
+        .walletPerfil {
+          color: #11dcca;
+          text-shadow: 0px 3px 6px #00000029;
+          font-size: 2.7vw;
+          font-weight: bold;
+          margin-bottom: 2vw;
+          margin-left: 2.5vw;
+        }
+
+        .btn-perfil {
+          color: #b7b7b7;
+          text-shadow: 0px 3px 6px #00000029;
+          margin-top: 0.5vw;
+          font-size: 3vw;
+          margin-left: 2.5vw;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .container-sponsorUsario {
+      background: transparent linear-gradient(270deg, #00407c 0%, #00203e 100%)
+        0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000029;
+      border-radius: 1vw;
+      width: 95%;
+      margin-top: 1vw;
+      margin-bottom: 2vw;
+      padding-bottom: 3vw;
+
+      .container-interno-sponsor {
+        display: flex;
+
+        .container-img {
+          display: none;
+        }
+
+        .container-info {
+          text-align: start;
+          padding-left: 3.5vw;
+          margin-top: 1vw;
+          color: white;
+
+          h1 {
+            font-size: 4vw;
+            font-weight: bold;
+            margin: 1.5vw 0vw;
+          }
+
+          p {
+            margin-top: 2vw;
+            font-size: 2.7vw;
+          }
+
+          .circulo-parrafo {
+            display: flex;
+
+            .circulo-conectado {
+              width: 0.7vw;
+              height: 0.7vw;
+              background-color: #11dcca;
+              border-radius: 50%;
+              margin: 1.6vw 1vw 0vw 0vw;
+            }
+
+            .conectado {
+              margin-top: 0.5vw;
+              color: #11dcca;
+            }
+
+            .desconectado {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ReactModal__Overlay {
+    background-color: #202020c9 !important;
+
+    .container-modalName {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      right: auto;
+      bottom: auto;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid #11dcca;
+      border-radius: 0.5vw;
+      padding: 2vw;
+      width: 70vw;
+      background-color: white;
+
+      .tituloModalName {
+        font-size: 4.5vw;
+        color: #004e9a;
+        margin-bottom: 1.5vw;
+      }
+
+      .formularioName {
+        .inputName {
+          width: 100%;
+          padding: 1vw;
+          font-size: 3vw;
+        }
+
+        .container-btns {
+          margin-top: 2vw;
+          display: flex;
+          justify-content: center;
+
+          .btnGlobalForm {
+            background-color: #11dcca;
+            border: none;
+            padding: 1vw 2vw;
+            border-radius: 0.2vw;
+            font-size: 3vw;
+            font-weight: bold;
+            color: #004e9a;
+            cursor: pointer;
+          }
+
+          .btn-cerrar {
+            margin-right: 2vw;
+          }
+        }
+      }
+    }
+
+    .container-modalData {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      right: auto;
+      bottom: auto;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid #11dcca;
+      border-radius: 0.5vw;
+      padding: 3vw;
+      width: 70vw;
+      background-color: white;
+
+      .tituloModalData {
+        font-size: 4.5vw;
+        color: #004e9a;
+        margin-bottom: 2.5vw;
+      }
+
+      .formularioData {
+        display: flex;
+        flex-direction: column;
+
+        .labelGlobal {
+          font-size: 3vw;
+          margin-bottom: 1vw;
+        }
+
+        .inputGlobal {
+          width: 100%;
+          padding: 1vw;
+          font-size: 3vw;
+          margin-bottom: 1.5vw;
+          border-radius: 0.3vw;
+          border: 0.1vw solid black;
+        }
+
+        .selectGender {
+          option {
+            color: red;
+            font-size: 2vw;
+          }
+        }
+
+        .container-btns {
+          margin-top: 2.5vw;
+          display: flex;
+          justify-content: center;
+
+          .btnGlobalForm {
+            background-color: #11dcca;
+            border: none;
+            padding: 1vw 2vw;
+            border-radius: 0.2vw;
+            font-size: 3vw;
+            font-weight: bold;
+            color: #004e9a;
+            cursor: pointer;
+          }
+
+          .btn-cerrar {
+            margin-right: 2vw;
+          }
+        }
+      }
+    }
+  }
+}

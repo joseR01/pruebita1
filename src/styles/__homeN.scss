@@ -1,0 +1,247 @@
+@use "_variables";
+
+.component-home {
+  * {
+    font-family: variables.$fontPoppins;
+    color: white;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .container-online {
+    width: 42vw;
+    padding: 0.8vw 1.9vw 1vw 0.5vw;
+    margin-top: 1.5vw;
+    .TimerCounter {
+      font-size: 1vw;
+    }
+    .titulo-online {
+      font-size: 2.6vw;
+      font-weight: bold;
+      letter-spacing: 0.1vw;
+      text-align: center;
+      margin-bottom: 1.8vw;
+    }
+  }
+
+  .container-info-home {
+    width: 63vw;
+    margin-top: 1vw;
+    padding: 1.5vw 0vw 1.5vw 0vw;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 2.5vw;
+
+    .container-total {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2vw;
+      padding: 0vw 3vw;
+
+      .container-total-staked {
+        text-align: center;
+        font-weight: bold;
+        font-size: 2vw;
+        .texto-staked {
+          margin-bottom: 1.5vw;
+          color: var(--blue-dark, #006998);
+        }
+        .cantidad-staked {
+          color: #161616;
+        }
+      }
+
+      .container-total-referralEarnings {
+        text-align: center;
+        font-weight: bold;
+        font-size: 2vw;
+        .texto-referralEarnings {
+          margin-bottom: 1.5vw;
+          color: var(--blue-dark, #006998);
+        }
+        .cantidad-referralEarnings {
+          color: #161616;
+        }
+      }
+    }
+
+    .container-botones-info {
+      display: flex;
+      justify-content: space-between;
+      padding: 0vw 6vw;
+    }
+  }
+
+  .boton-global-home {
+    background: var(--blue-dark, #006998);
+    width: 12.5vw;
+    padding: 1vw 0vw;
+    font-size: 1.4vw;
+    border-radius: 0.5vw;
+    border: none;
+  }
+
+  .boton-global-home:hover {
+    background: #0070b8;
+    width: 12.5vw;
+    padding: 1vw 0vw;
+    font-size: 1.4vw;
+    border-radius: 0.5vw;
+    border: none;
+  }
+
+  .boton-preRegister {
+    width: 15vw;
+    margin-top: 2.1vw;
+    background: linear-gradient(224deg, #80c342 0%, #058933 100%);
+    color: white;
+    font-weight: bold;
+    border-radius: 0.5vw;
+    font-size: 1.6vw;
+    padding: 1.4vw 0vw;
+    margin-bottom: 4vw;
+  }
+
+  .boton-preRegister:hover {
+    width: 15vw;
+    margin-top: 2.1vw;
+    background: var(--green-dark, #058933);
+    font-weight: bold;
+    border-radius: 0.5vw;
+    font-size: 1.6vw;
+    padding: 1.4vw 0vw;
+    margin-bottom: 4vw;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .component-home {
+    * {
+      font-family: variables.$fontPoppins;
+      color: white;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+    // background: linear-gradient(180deg, #3580c2 0%, #0d358d 100%);
+
+    .container-online {
+      width: 70em;
+      padding: 0.8em 1.9em 1em 0.5em;
+      margin-top: 2.7em;
+      .TimerCounter {
+        font-size: 1.7em;
+      }
+      .titulo-online {
+        font-size: 6em;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        text-align: center;
+        margin-bottom: 0.5em;
+        margin-top: 4vw;
+      }
+    }
+
+    .container-info-home {
+      width: 70em;
+      margin-top: 5em;
+      padding: 2.7em 0em 2em 0em;
+      background: rgba(255, 255, 255, 0.75);
+      border-radius: 2.5em;
+
+      .container-total {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 2em;
+        padding: 2em 3em;
+
+        .container-total-staked {
+          text-align: center;
+          font-weight: 600;
+          font-size: 5em;
+          margin-bottom: 1.2em;
+          .texto-staked {
+            margin-bottom: 0.7em;
+            color: #0070b8;
+          }
+          .cantidad-staked {
+            color: #161616;
+          }
+        }
+
+        .container-total-referralEarnings {
+          text-align: center;
+          font-weight: 600;
+          font-size: 5em;
+          .texto-referralEarnings {
+            margin-bottom: 0.7em;
+            color: #0070b8;
+          }
+          .cantidad-referralEarnings {
+            color: #161616;
+          }
+        }
+      }
+
+      .container-botones-info {
+        display: flex;
+        justify-content: space-between;
+        padding: 0em 7em;
+      }
+    }
+
+    .boton-global-home {
+      width: 11em;
+      padding: 0.7em 0em;
+      font-size: 2.5em;
+      border-radius: 0.5vw;
+      border: none;
+    }
+
+    .boton-global-home:hover {
+      width: 11em;
+      padding: 0.7em 0em;
+      font-size: 2.5em;
+      border-radius: 0.5vw;
+      border: none;
+    }
+
+    .boton-preRegister {
+      width: 10em;
+      margin-top: 2em;
+      font-weight: bold;
+      border-radius: 0.5vw;
+      font-size: 3em;
+      padding: 0.8em 0em;
+      margin-bottom: 5em;
+    }
+
+    .boton-preRegister:hover {
+      width: 10em;
+      margin-top: 2em;
+      font-weight: bold;
+      border-radius: 0.5vw;
+      font-size: 3em;
+      padding: 0.8em 0em;
+      margin-bottom: 5em;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .component-home {
+    .container-info-home {
+      .container-botones-info {
+        display: flex;
+        justify-content: space-between;
+        padding: 0em 9em;
+      }
+    }
+  }
+}

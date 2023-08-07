@@ -1,0 +1,379 @@
+@use "_variables";
+
+.page-welcome {
+  * {
+    font-family: variables.$fontPoppins;
+    color: white;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  .tittle-welcome {
+    font-size: 3.2rem;
+    margin-bottom: -3vw;
+    font-family: "Baloo 2";
+    margin-top: 4vw;
+  }
+
+  .logoInvexa {
+    width: 700px;
+  }
+
+  // .container-img-welcome {
+  //   background-repeat: no-repeat;
+  //   background-position: 0% 0%;
+  //   background-size: 100% 100%;
+  //   object-fit: cover;
+  //   position: absolute;
+  //   z-index: -1;
+  //   top: -17vw;
+
+  //   img {
+  //     width: 100%;
+  //     height: 100%;
+  //   }
+  // }
+
+  .container-botones {
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .botones-globales-welcome {
+      width: 14vw;
+      background: linear-gradient(224deg, #80c342 0%, #058933 100%);
+      color: white;
+      font-size: 1.3vw;
+      font-weight: bold;
+      border-radius: 0.5vw;
+      padding: 1.2vw 0vw;
+    }
+
+    .botones-globales-welcome:hover {
+      width: 14vw;
+      background: var(--green-dark, #058933);
+      font-size: 1.3vw;
+      font-weight: bold;
+      border-radius: 0.5vw;
+      padding: 1.2vw 0vw;
+    }
+
+    .botones-up {
+      display: flex;
+      justify-content: space-between;
+      width: 57vw;
+
+      .btn-contract-welcome {
+        margin-right: 1vw;
+      }
+      .btn-toGo-welcome {
+      }
+    }
+
+    .btn-conectWallet-welcome {
+      margin-top: 6vw;
+      background: linear-gradient(224deg, #80c342 0%, #058933 100%);
+      color: white;
+      width: 17vw;
+      padding: 1.4vw 0vw;
+      font-size: 1.5vw;
+    }
+
+    .btn-conectWallet-welcome:hover {
+      margin-top: 6vw;
+      background: var(--green-dark, #058933);
+      width: 17vw;
+      padding: 1.4vw 0vw;
+      font-size: 1.5vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .page-welcome {
+    * {
+      font-family: variables.$fontPoppins;
+      color: white;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .tittle-welcome {
+      font-size: 3.2rem;
+      margin-bottom: -4vw;
+      font-family: "Baloo 2";
+      margin-top: 10vw;
+    }
+
+    .logoInvexa {
+      width: 700px;
+    }
+
+    .container-img-welcome {
+      background-repeat: no-repeat;
+      background-position: 0% 0%;
+      background-size: 100% 100%;
+      object-fit: cover;
+      position: absolute;
+      z-index: -1;
+      top: -30vw;
+      height: 60em;
+
+      img {
+        width: 60em;
+        height: 100%;
+      }
+    }
+
+    .container-botones {
+      margin-top: 3vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .botones-globales-welcome {
+        width: 14vw;
+        font-size: 1.3vw;
+        font-weight: bold;
+        border-radius: 0.5vw;
+        padding: 1.2vw 0vw;
+      }
+
+      .botones-globales-welcome:hover {
+        width: 14vw;
+        font-size: 1.3vw;
+        font-weight: bold;
+        border-radius: 0.5vw;
+        padding: 1.2vw 0vw;
+      }
+
+      .botones-up {
+        display: flex;
+        justify-content: space-between;
+        width: 57vw;
+
+        .btn-contract-welcome {
+          margin-right: 1vw;
+        }
+        .btn-toGo-welcome {
+        }
+      }
+
+      .btn-conectWallet-welcome {
+        margin-top: 10vw;
+        width: 17vw;
+        padding: 1.4vw 0vw;
+        font-size: 1.5vw;
+      }
+
+      .btn-conectWallet-welcome:hover {
+        margin-top: 10vw;
+        width: 17vw;
+        padding: 1.4vw 0vw;
+        font-size: 1.5vw;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .page-welcome {
+    * {
+      font-family: variables.$fontPoppins;
+      color: white;
+      font-size: 1vw;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .tittle-welcome {
+      font-size: 3.5em;
+      margin-bottom: -1em;
+      font-family: "Baloo 2";
+      margin-top: 1em;
+    }
+
+    .logoInvexa {
+      width: 700px;
+    }
+
+    .container-img-welcome {
+      background-repeat: no-repeat;
+      background-position: 0% 0%;
+      background-size: 100% 100%;
+      object-fit: cover;
+      position: absolute;
+      z-index: -1;
+      top: 26em;
+      left: -31em;
+      height: 125em;
+
+      img {
+        width: 255em;
+        height: 100%;
+      }
+    }
+
+    .container-botones {
+      margin-top: 3.5em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .botones-globales-welcome {
+        width: 14vw;
+        font-size: 3em;
+        width: 10em;
+        padding: 0.7em 0em;
+        border-radius: 0.5vw;
+        font-weight: bold;
+      }
+
+      .botones-globales-welcome:hover {
+        font-size: 3em;
+        width: 10em;
+        padding: 0.7em 0em;
+        border-radius: 0.5vw;
+        font-weight: bold;
+      }
+
+      .botones-up {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 4em;
+
+        .btn-contract-welcome {
+        }
+        .btn-toGo-welcome {
+          margin-top: 2em;
+        }
+      }
+
+      .btn-conectWallet-welcome {
+        margin-top: 7em;
+        width: 10.5em;
+        padding: 0.7em 0vw;
+        font-size: 3.2em;
+        margin-bottom: 5em;
+      }
+
+      .btn-conectWallet-welcome:hover {
+        margin-top: 7em;
+        width: 10.5em;
+        padding: 0.7em 0vw;
+        font-size: 3.2em;
+        margin-bottom: 5em;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .page-welcome {
+    * {
+      font-family: variables.$fontPoppins;
+      color: white;
+      font-size: 1vw;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .tittle-welcome {
+      font-size: 2.5em;
+      margin-bottom: -0.8em;
+      font-family: "Baloo 2";
+    }
+
+    .logoInvexa {
+      width: 85em;
+    }
+
+    .container-img-welcome {
+      background-repeat: no-repeat;
+      background-position: 0% 0%;
+      background-size: 100% 100%;
+      object-fit: cover;
+      position: absolute;
+      z-index: -1;
+      top: -15em;
+      left: -31em;
+      height: 193em;
+
+      img {
+        width: 255em;
+        height: 100%;
+      }
+    }
+
+    .container-botones {
+      margin-top: 3.5em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .botones-globales-welcome {
+        width: 14vw;
+        font-size: 4em;
+        width: 10em;
+        padding: 0.7em 0em;
+        border-radius: 0.5vw;
+        font-weight: bold;
+      }
+
+      .botones-globales-welcome:hover {
+        font-size: 4em;
+        width: 10em;
+        padding: 0.7em 0em;
+        border-radius: 0.5vw;
+        font-weight: bold;
+      }
+
+      .botones-up {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 4em;
+
+        .btn-contract-welcome {
+        }
+        .btn-toGo-welcome {
+          margin-top: 2em;
+        }
+      }
+
+      .btn-conectWallet-welcome {
+        margin-top: 7em;
+        width: 10.5em;
+        padding: 0.7em 0vw;
+        font-size: 4.2em;
+        margin-bottom: 5em;
+      }
+
+      .btn-conectWallet-welcome:hover {
+        margin-top: 7em;
+        width: 10.5em;
+        padding: 0.7em 0vw;
+        font-size: 4.2em;
+        margin-bottom: 5em;
+      }
+    }
+  }
+}

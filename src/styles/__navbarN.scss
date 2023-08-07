@@ -1,0 +1,372 @@
+@use "_variables";
+
+.container-navbarTova {
+  * {
+    font-family: variables.$fontPoppins;
+  }
+  font-size: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6em 1.9em;
+  background: #ffffff;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+
+  .container-menu_hamburguesa {
+    display: none;
+  }
+
+  .container-logoNavbar {
+    width: 11.5em;
+
+    img {
+      width: auto;
+      height: 3.7em;
+    }
+  }
+
+  .container-info-right {
+    display: flex;
+    align-items: center;
+    .container-buttons {
+      display: flex;
+      .wallet-btn {
+        background: linear-gradient(224deg, white 0%, white 100%);
+        border: 2px solid var(--blue-dark, #006998);
+        margin-left: 0.5em;
+        color: #006998;
+      }
+
+      .container-foto-btn {
+        display: flex;
+        align-items: center;
+
+        .imgPerfil {
+          border-radius: 5em;
+          width: 4em;
+          height: 4em;
+          object-fit: cover;
+          margin-left: 1em;
+        }
+      }
+      .wallet-connect {
+        margin-left: 0.5em;
+        width: 12em;
+      }
+    }
+  }
+}
+
+.container-navbarTovaTransparent {
+  * {
+    font-family: variables.$fontPoppins;
+  }
+  font-size: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6em 1.9em;
+  background: transparent;
+
+  .container-logoNavbar {
+    width: 11.5em;
+
+    img {
+      width: auto;
+      height: 3.7em;
+    }
+  }
+
+  .container-info-right {
+    display: flex;
+    align-items: center;
+    .container-buttons {
+      display: flex;
+      .wallet-btn {
+        background: linear-gradient(
+          180deg,
+          #b3b3b3 0%,
+          #cccccc 51.56%,
+          #f2f2f2 100%
+        );
+        color: #001848;
+        margin-left: 0.5em;
+      }
+
+      .container-foto-btn {
+        display: flex;
+        align-items: center;
+
+        // .imgPerfil {
+        //   border-radius: 5em;
+        //   width: 4em;
+        //   margin-left: 1em;
+        // }
+      }
+      .wallet-connect {
+        margin-left: 0.5em;
+        width: 12em;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container-navbarTova {
+    .container-menu_hamburguesa {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container-navbarTova {
+    * {
+      font-family: variables.$fontPoppins;
+    }
+
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6em 1.9em;
+    height: 5em;
+    background: #ffffff;
+    border: 1px solid #b7b7b7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    .container-menu_hamburguesa {
+      display: block;
+    }
+
+    .container-logoNavbar {
+      width: 22em;
+      text-align: right;
+      margin-right: 1em;
+
+      img {
+        width: auto;
+        height: 3.5em;
+      }
+    }
+
+    .container-info-right {
+      display: flex;
+      align-items: center;
+      .container-buttons {
+        display: flex;
+        .wallet-btn {
+          background: linear-gradient(
+            180deg,
+            #b3b3b3 0%,
+            #cccccc 51.56%,
+            #f2f2f2 100%
+          );
+          color: #001848;
+          margin-left: 0.5em;
+        }
+
+        .container-foto-btn {
+          display: flex;
+          align-items: center;
+
+          // .imgPerfil {
+          //   border-radius: 5em;
+          //   width: 4em;
+          //   margin-left: 1em;
+          // }
+        }
+        .wallet-connect {
+          margin-left: 0.5em;
+          width: 12em;
+        }
+      }
+    }
+  }
+
+  .container-navbarTovaTransparent {
+    * {
+      font-family: variables.$fontPoppins;
+    }
+
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6em 1.9em;
+    height: 5em;
+    background: transparent;
+
+    .container-logoNavbar {
+      width: 22em;
+      text-align: right;
+      margin-right: 1em;
+
+      img {
+        width: auto;
+        height: 3.5em;
+      }
+    }
+
+    .container-info-right {
+      display: flex;
+      align-items: center;
+      .container-buttons {
+        display: flex;
+        .wallet-btn {
+          background: linear-gradient(
+            180deg,
+            #b3b3b3 0%,
+            #cccccc 51.56%,
+            #f2f2f2 100%
+          );
+          color: #001848;
+          margin-left: 0.5em;
+        }
+
+        .container-foto-btn {
+          display: flex;
+          align-items: center;
+
+          // .imgPerfil {
+          //   border-radius: 5em;
+          //   width: 4em;
+          //   margin-left: 1em;
+          // }
+        }
+        .wallet-connect {
+          margin-left: 0.5em;
+          width: 12em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .container-navbarTova {
+    * {
+      font-family: variables.$fontPoppins;
+    }
+    font-size: 3vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6em 1.9em;
+    height: 5em;
+    background: #ffffff;
+    border: 1px solid #b7b7b7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    .container-logoNavbar {
+      width: 30em;
+      text-align: right;
+      margin-right: 1em;
+
+      img {
+        width: auto;
+        height: 2.5em;
+      }
+      .container-menu_hamburgues {
+      }
+    }
+
+    .container-info-right {
+      display: flex;
+      align-items: center;
+
+      .container-buttons {
+        display: flex;
+        .wallet-btn {
+          background: linear-gradient(
+            180deg,
+            #b3b3b3 0%,
+            #cccccc 51.56%,
+            #f2f2f2 100%
+          );
+          color: #001848;
+          margin-left: 0.5em;
+        }
+
+        .container-foto-btn {
+          display: flex;
+          align-items: center;
+
+          .imgPerfil {
+            border-radius: 5em;
+            width: 3.5em;
+            height: 3.5em;
+            object-fit: cover;
+            margin-left: 1em;
+          }
+        }
+        .wallet-connect {
+          margin-left: 0.5em;
+          width: 12em;
+        }
+      }
+    }
+  }
+
+  .container-navbarTovaTransparent {
+    * {
+      font-family: variables.$fontPoppins;
+    }
+    font-size: 3vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6em 1.9em;
+    height: 5em;
+    background: transparent;
+
+    .container-logoNavbar {
+      width: 13em;
+      text-align: right;
+      margin-right: 1em;
+
+      img {
+        width: auto;
+        height: 2.5em;
+      }
+      .container-menu_hamburgues {
+      }
+    }
+
+    .container-info-right {
+      display: flex;
+      align-items: center;
+
+      .container-buttons {
+        display: flex;
+        .wallet-btn {
+          background: linear-gradient(
+            180deg,
+            #b3b3b3 0%,
+            #cccccc 51.56%,
+            #f2f2f2 100%
+          );
+          color: #001848;
+          margin-left: 0.5em;
+        }
+
+        .container-foto-btn {
+          display: flex;
+          align-items: center;
+
+          // .imgPerfil {
+          //   border-radius: 5em;
+          //   width: 3.5em;
+          //   margin-left: 1em;
+          // }
+        }
+        .wallet-connect {
+          margin-left: 0.5em;
+          width: 12em;
+        }
+      }
+    }
+  }
+}

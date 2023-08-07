@@ -1,0 +1,18 @@
+.component-tema {
+  .container-tema {
+    width: 3vw;
+    height: 1.5vw;
+    border-radius: 100px;
+    background-color: #001848;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .icon-tema {
+      background-color: white;
+      height: 1.3vw;
+      width: 1.3vw;
+      border-radius: 100px;
+    }
+  }
+}

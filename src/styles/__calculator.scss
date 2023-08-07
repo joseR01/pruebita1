@@ -1,0 +1,281 @@
+@use "_variables";
+
+.page-calculator {
+  margin: 3vw 0vw 1vw 0vw;
+
+  * {
+    font-family: variables.$fontPoppins;
+    color: #006998;
+  }
+
+  font-size: 0.8vw;
+  padding: 0em 11em;
+
+  .container-configure-your-network {
+    background: #ffffff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: auto;
+    padding: 1em 1.5em 0em 1.5em;
+    height: 100%;
+
+    .title-configure {
+      font-weight: bold;
+      font-size: 2.4em;
+      margin-bottom: 0.5em;
+      color: #161616;
+    }
+
+    label {
+      font-size: 1.3em;
+      font-weight: 600;
+    }
+
+    input {
+      font-size: 1.15em;
+      background: #f6f7fb;
+      color: #495057;
+    }
+
+    button {
+      color: #ffffff;
+      width: 9em;
+      font-size: 0.9em;
+    }
+
+    .container-configure-first {
+      margin: 1em 0em;
+    }
+
+    .container-configure-second {
+      margin: 1em 0em;
+    }
+  }
+
+  .container-profits {
+    background: linear-gradient(221deg, #07abea 0%, #006998 100%);
+    box-shadow: 5.766135215759277px 5.766135215759277px 14.415338516235352px 0px
+      rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 1.5em 1.5em 0em 1.5em;
+    border-radius: 10px;
+    height: 100%;
+
+    .title-profits {
+      font-weight: bold;
+      font-size: 2.4em;
+      margin: 0 0 0.3em 0;
+      color: white;
+    }
+
+    .container-profits-for-time {
+      font-weight: bold;
+      margin-top: 2em;
+
+      p {
+        margin-bottom: 1em;
+        color: white;
+      }
+      .title {
+        font-size: 1.9em;
+      }
+      .value {
+        font-size: 2.2em;
+      }
+    }
+  }
+
+  .container-how-work {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 2.5em 1.5em 0em 1.5em;
+    border-radius: 10px;
+    height: 100%;
+    h2 {
+      font-size: 2.5em;
+      color: #006998;
+      font-weight: 500;
+    }
+
+    img {
+      width: 22em;
+    }
+  }
+
+  .container-info {
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 1em;
+    padding: 1em;
+    margin-top: 1em;
+
+    p {
+      font-size: 1.25em;
+      color: #161616;
+    }
+
+    .nivel {
+      width: 11em;
+    }
+    .totalTeam {
+      width: 13em;
+    }
+    .stakeLevel {
+      width: 16em;
+    }
+    .totalStaked {
+      width: 15em;
+    }
+    .totalResidual {
+    }
+
+    .container-tittles {
+      display: flex;
+      border-bottom: #006998 solid 0.05em;
+      padding: 0.6em 0em 0.5em 1em;
+      p {
+        font-weight: bold;
+        color: #006998;
+      }
+    }
+
+    .container-map-info {
+      margin-top: 1em;
+      .container-data {
+        display: flex;
+        padding: 0em 1em;
+        margin-bottom: 1em;
+      }
+
+      .container-data:last-child {
+        margin-bottom: 0em;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    font-size: 0.9vw;
+    margin: 5vw 0vw;
+    padding: 0em 7em;
+    .container-configure-your-network {
+      label {
+        font-size: 2.4em;
+        font-weight: 600;
+        margin: 0.5em 0em;
+      }
+      button {
+        font-size: 1.8em;
+        padding: 0.8em 0em;
+        width: 10em;
+      }
+      input {
+        font-size: 2.5em;
+        height: 2.2em;
+      }
+      .title-configure {
+        font-size: 3.3em;
+      }
+      .container-configure-first {
+        margin: 2em 0em;
+      }
+
+      .container-configure-second {
+        margin: 2em 0em;
+      }
+    }
+    .container-profits {
+      margin-top: 0.8em;
+      .title-profits {
+        font-weight: bold;
+        font-size: 5.3em;
+        margin: 0.5em 0em;
+      }
+      .container-profits-for-time {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .title {
+          font-size: 3.1em;
+        }
+        .value {
+          font-size: 4.5em;
+          margin: 0.8em 0em;
+        }
+      }
+    }
+    .container-how-work {
+      justify-content: center;
+      cursor: pointer;
+      padding: 2.5em 1.5em 2em 1.5em;
+      h2 {
+        font-size: 4.3em;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      img {
+        width: 25em;
+      }
+    }
+    .container-info {
+      display: flex;
+      flex-direction: column;
+      background: #ffffff;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+      border-radius: 1em;
+      padding: 1em;
+      margin-top: 1em;
+
+      p {
+        font-size: 2.5em;
+        margin: 0.5em 0em;
+      }
+
+      .nivel {
+        width: 11em;
+      }
+      .totalTeam {
+        width: 19em;
+      }
+      .stakeLevel {
+        width: 19em;
+      }
+      .totalStaked {
+        width: 19em;
+      }
+
+      .container-tittles {
+        display: flex;
+        border-bottom: #006998 solid 0.05em;
+        padding: 0.6em 0em 0.5em 1em;
+        p {
+          font-weight: bold;
+        }
+      }
+
+      .container-map-info {
+        margin-top: 1em;
+        .container-data {
+          display: flex;
+          padding: 0em 1em;
+          margin-bottom: 1.5em;
+        }
+
+        .container-data:last-child {
+          margin-bottom: 0em;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    margin: 8vw 0vw;
+  }
+}

@@ -1,0 +1,45 @@
+.wallet-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(224deg, #80c342 0%, #058933 100%);
+  color: white;
+  border-radius: 0.5vw;
+  font-size: 1.1vw;
+  padding: 0.7vw 0.5vw;
+  width: 11vw;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+
+  a,
+  a:hover {
+    // color: #001848;
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+.wallet-btn:hover {
+  background: var(--green-dark, #058933);
+  color: #ffffff;
+}
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.red {
+  color: red;
+}
+
+.input-type1 {
+  background: #f3f6ff;
+  border: 1px solid #dfd5d5;
+  border-radius: 100px;
+  padding-left: 12px;
+  min-height: 2.3vw;
+  width: 100%;
+}
